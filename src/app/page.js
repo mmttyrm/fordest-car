@@ -1,7 +1,9 @@
+'use client';
 // import Image from 'next/image';
 import styles from './page.module.css';
 import classNames from 'classnames/bind';
 import mustang from '@/assets/images/mustang1.png';
+import { Flag, Speed, Engine, Pack } from '@/assets/svgs';
 const cx = classNames.bind(styles);
 export default function Home() {
     return (
@@ -26,10 +28,26 @@ export default function Home() {
                     </div>
                     <div className={cx('info', 'grid')}>
                         <div className='row'>
-                            <div className='col'>1</div>
-                            <div className='col'>1</div>
-                            <div className='col'>1</div>
-                            <div className='col'>1</div>
+                            <div className='col'>
+                                <Speed className={cx('icon__content-item')} />
+                                <div className={cx('text__content-item')}>Max, speed</div>
+                                <span className={cx('desc__content-item')}>244 MPH</span>
+                            </div>
+                            <div className='col'>
+                                <Flag className={cx('icon__content-item')} />
+                                <div className={cx('text__content-item')}>Max, speed</div>
+                                <span className={cx('desc__content-item')}>244 MPH</span>
+                            </div>
+                            <div className='col'>
+                                <Engine className={cx('icon__content-item')} />
+                                <div className={cx('text__content-item')}>Max, speed</div>
+                                <span className={cx('desc__content-item')}>244 MPH</span>
+                            </div>
+                            <div className='col'>
+                                <Pack className={cx('icon__content-item')} />
+                                <div className={cx('text__content-item')}>Max, speed</div>
+                                <span className={cx('desc__content-item')}>244 MPH</span>
+                            </div>
                         </div>
                     </div>
                 </div>

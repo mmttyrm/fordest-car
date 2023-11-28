@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import classNames from 'classnames/bind';
 import style from './header.module.css';
-import Logo from '@/assets/svg/logo';
+import Logo from '@/assets/svgs/logo';
 
 const cx = classNames.bind(style);
 function Header() {

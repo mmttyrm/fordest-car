@@ -15,6 +15,14 @@ const cx = classNames.bind(styles);
 export default function RootLayout({ children }) {
     return (
         <html lang='en'>
+            <head>
+                <link
+                    rel='icon'
+                    href='/icon?<generated>'
+                    type='image/<generated>'
+                    sizes='<generated>'
+                />
+            </head>
             <body className={cx('wrapper')}>
                 <Header />
                 {children}
